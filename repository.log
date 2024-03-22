@@ -1,0 +1,39 @@
+commit be669bbea5d30a25a50135a22b818bcba8e55168
+Author: Naboth Dirirsa <nd821@spitfire.ae.ic.ac.uk>
+Date:   Fri Mar 15 21:39:56 2024 +0000
+
+    Modified the code so errors are fixed and also discrtised MPI ready for parallel programming
+
+A	outputfile.txt
+
+commit 578abd3455c3689f99dcea32b87ca035e6aac49f
+Author: Naboth Dirirsa <nd821@spitfire.ae.ic.ac.uk>
+Date:   Mon Mar 11 09:58:10 2024 +0000
+
+    finalTrue text file is used for comparison for unit test and SolverCG.o is removed as it is unneccessary
+
+D	SolverCG.o
+R074	finaltest.txt	finalTrue.txt
+
+commit da217fce268439192216da9574c440689f2b4cb2
+Author: Naboth Dirirsa <nd821@spitfire.ae.ic.ac.uk>
+Date:   Mon Mar 11 09:42:27 2024 +0000
+
+    Unit test for Lid driven cavity class added
+
+A	Makefile
+A	SolverCG.o
+A	UnitTest.cpp
+A	finaltest.txt
+
+commit 2dd641a2707dd51fef667e98a5232b7b3277fadb
+Author: Naboth Dirirsa <nd821@spitfire.ae.ic.ac.uk>
+Date:   Thu Mar 7 14:58:13 2024 +0000
+
+    Initial Commit
+
+A	LidDrivenCavity.cpp
+A	LidDrivenCavity.h
+A	LidDrivenCavitySolver.cpp
+A	SolverCG.cpp
+A	SolverCG.h

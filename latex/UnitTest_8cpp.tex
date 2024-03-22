@@ -1,0 +1,74 @@
+\hypertarget{UnitTest_8cpp}{}\doxysection{Unit\+Test.\+cpp File Reference}
+\label{UnitTest_8cpp}\index{UnitTest.cpp@{UnitTest.cpp}}
+
+
+This .cpp file checks to ensure that both the Lid Driven Cavity and Solver CG class works corrrectly.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}Lid\+Driven\+Cavity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Solver\+CG.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$boost/test/included/unit\+\_\+test.\+hpp$>$}\newline
+Include dependency graph for Unit\+Test.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{UnitTest_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structMPIFixture}{MPIFixture}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{UnitTest_8cpp_ab340a5e76af466a5f20ec5500d30a80b}\label{UnitTest_8cpp_ab340a5e76af466a5f20ec5500d30a80b}} 
+\#define {\bfseries BOOST\+\_\+\+TEST\+\_\+\+MAIN}
+\item 
+\mbox{\Hypertarget{UnitTest_8cpp_aad70a03b0bde8b589ffc2e93660844ee}\label{UnitTest_8cpp_aad70a03b0bde8b589ffc2e93660844ee}} 
+\#define {\bfseries IDX}(I,  J)~((J)$\ast$9 + (I))
+\item 
+\mbox{\Hypertarget{UnitTest_8cpp_a6b2a3852db8bb19ab6909bac01859985}\label{UnitTest_8cpp_a6b2a3852db8bb19ab6909bac01859985}} 
+\#define {\bfseries BOOST\+\_\+\+TEST\+\_\+\+MODULE}~Solver\+Lid\+Tester
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{UnitTest_8cpp_a7ec1f4ce4a5496676ffb64ea2face430}\label{UnitTest_8cpp_a7ec1f4ce4a5496676ffb64ea2face430}} 
+{\bfseries BOOST\+\_\+\+GLOBAL\+\_\+\+FIXTURE} (\mbox{\hyperlink{structMPIFixture}{MPIFixture}})
+\item 
+\mbox{\Hypertarget{UnitTest_8cpp_a7d38ae5d0a996e98a4572ee28a0bcff0}\label{UnitTest_8cpp_a7d38ae5d0a996e98a4572ee28a0bcff0}} 
+vector$<$ double $>$ {\bfseries split\+Line} (const string \&line)
+\item 
+\mbox{\hyperlink{UnitTest_8cpp_a3da5b998b5e6f0a5a1e004e503968047}{BOOST\+\_\+\+AUTO\+\_\+\+TEST\+\_\+\+CASE}} (Lid\+Driven\+Cavity\+Tester)
+\item 
+\mbox{\Hypertarget{UnitTest_8cpp_a4228252f231c2fd04a42d912259045e9}\label{UnitTest_8cpp_a4228252f231c2fd04a42d912259045e9}} 
+{\bfseries BOOST\+\_\+\+AUTO\+\_\+\+TEST\+\_\+\+CASE} (test\+Solver\+CGSolve)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This .cpp file checks to ensure that both the Lid Driven Cavity and Solver CG class works corrrectly. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{UnitTest_8cpp_a3da5b998b5e6f0a5a1e004e503968047}\label{UnitTest_8cpp_a3da5b998b5e6f0a5a1e004e503968047}} 
+\index{UnitTest.cpp@{UnitTest.cpp}!BOOST\_AUTO\_TEST\_CASE@{BOOST\_AUTO\_TEST\_CASE}}
+\index{BOOST\_AUTO\_TEST\_CASE@{BOOST\_AUTO\_TEST\_CASE}!UnitTest.cpp@{UnitTest.cpp}}
+\doxysubsubsection{\texorpdfstring{BOOST\_AUTO\_TEST\_CASE()}{BOOST\_AUTO\_TEST\_CASE()}}
+{\footnotesize\ttfamily BOOST\+\_\+\+AUTO\+\_\+\+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{Lid\+Driven\+Cavity\+Tester}]{ }\end{DoxyParamCaption})}
+
+The task of these if statements are to distribute the grid in an even way 
+\begin{DoxyParams}{Parameters}
+{\em begin\+\_\+x,begin\+\_\+y} & tell each rank where their tarting point is in the x and y direction respectively \\
+\hline
+{\em end\+\_\+x,end\+\_\+y} & tell each rank where their ending point is in the x and y direction respectively ~\newline
+\\
+\hline
+\end{DoxyParams}

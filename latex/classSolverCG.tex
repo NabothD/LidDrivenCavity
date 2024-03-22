@@ -1,0 +1,100 @@
+\hypertarget{classSolverCG}{}\doxysection{Solver\+CG Class Reference}
+\label{classSolverCG}\index{SolverCG@{SolverCG}}
+
+
+This class solves for vorticity and updates the stream function.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSolverCG_a90226a138ffc012d80d3cfcfcb7addf9}{Solver\+CG}} (int p\+Nx, int p\+Ny, double pdx, double pdy, int g\+\_\+\+Nx, int g\+\_\+\+Ny)
+\begin{DoxyCompactList}\small\item\em This class solves for vorticity and stream function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSolverCG_a443d7aa53c8b46b758341d2369ec26d7}{Recieve\+CG}} (int bx, int by, int ex, int ey, int l\+\_\+rank, int r\+\_\+rank, int d\+\_\+rank, int u\+\_\+rank, int g\+\_\+ex, int g\+\_\+ey, int g\+\_\+bx, int g\+\_\+by, MPI\+\_\+\+Comm mygrid)
+\item 
+void \mbox{\hyperlink{classSolverCG_a8cc7c4b2651399f9dc5b5ef2bdfeebf7}{Solve}} (double $\ast$b, double $\ast$x)
+\begin{DoxyCompactList}\small\item\em Solve function takes in vorticity as b and stream function as x and updates them both. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class solves for vorticity and updates the stream function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The grid spacing in the x direction \\
+\hline
+{\em dy} & The grid spacing in the y direction \\
+\hline
+{\em Nx} & The number of grid in the x direction \\
+\hline
+{\em Ny} & The number of grid in the y direction \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSolverCG_a90226a138ffc012d80d3cfcfcb7addf9}\label{classSolverCG_a90226a138ffc012d80d3cfcfcb7addf9}} 
+\index{SolverCG@{SolverCG}!SolverCG@{SolverCG}}
+\index{SolverCG@{SolverCG}!SolverCG@{SolverCG}}
+\doxysubsubsection{\texorpdfstring{SolverCG()}{SolverCG()}}
+{\footnotesize\ttfamily Solver\+CG\+::\+Solver\+CG (\begin{DoxyParamCaption}\item[{int}]{p\+Nx,  }\item[{int}]{p\+Ny,  }\item[{double}]{pdx,  }\item[{double}]{pdy,  }\item[{int}]{g\+\_\+\+Nx,  }\item[{int}]{g\+\_\+\+Ny }\end{DoxyParamCaption})}
+
+
+
+This class solves for vorticity and stream function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The grid spacing in the x direction \\
+\hline
+{\em dy} & The grid spacing in the y direction \\
+\hline
+{\em Nx} & The number of grid in the x direction \\
+\hline
+{\em Ny} & The number of grid in the y direction \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSolverCG_a443d7aa53c8b46b758341d2369ec26d7}\label{classSolverCG_a443d7aa53c8b46b758341d2369ec26d7}} 
+\index{SolverCG@{SolverCG}!RecieveCG@{RecieveCG}}
+\index{RecieveCG@{RecieveCG}!SolverCG@{SolverCG}}
+\doxysubsubsection{\texorpdfstring{RecieveCG()}{RecieveCG()}}
+{\footnotesize\ttfamily void Solver\+CG\+::\+Recieve\+CG (\begin{DoxyParamCaption}\item[{int}]{bx,  }\item[{int}]{by,  }\item[{int}]{ex,  }\item[{int}]{ey,  }\item[{int}]{l\+\_\+rank,  }\item[{int}]{r\+\_\+rank,  }\item[{int}]{d\+\_\+rank,  }\item[{int}]{u\+\_\+rank,  }\item[{int}]{g\+\_\+ex,  }\item[{int}]{g\+\_\+ey,  }\item[{int}]{g\+\_\+bx,  }\item[{int}]{g\+\_\+by,  }\item[{MPI\+\_\+\+Comm}]{mygrid }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Bx,By} & are set to zero or one depending wether the starting point of tyhe rank grid is at the boundary or not \\
+\hline
+{\em Ex,Ey} & theses are set to be the end of each rank depending on wether the rank is at the boundary or nor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSolverCG_a8cc7c4b2651399f9dc5b5ef2bdfeebf7}\label{classSolverCG_a8cc7c4b2651399f9dc5b5ef2bdfeebf7}} 
+\index{SolverCG@{SolverCG}!Solve@{Solve}}
+\index{Solve@{Solve}!SolverCG@{SolverCG}}
+\doxysubsubsection{\texorpdfstring{Solve()}{Solve()}}
+{\footnotesize\ttfamily void Solver\+CG\+::\+Solve (\begin{DoxyParamCaption}\item[{double $\ast$}]{b,  }\item[{double $\ast$}]{x }\end{DoxyParamCaption})}
+
+
+
+Solve function takes in vorticity as b and stream function as x and updates them both. 
+
+Solve function takes in vorticity as b and stream function as x and updates them both using the conjeguate gradient method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & this is equivelant to vorticity \\
+\hline
+{\em x} & this is equivelant to stream function \\
+\hline
+\end{DoxyParams}
+This is u
+
+Calculation of global variable
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Solver\+CG.\+h\item 
+CG\+\_\+\+ORiginal.\+cpp\item 
+Solver\+CG.\+cpp\end{DoxyCompactItemize}

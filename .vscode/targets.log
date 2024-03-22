@@ -1,0 +1,352 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Mar 22 22:23:41 2024
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# environment
+VSCODE_CWD = /home/nd821
+# environment
+MODULES_CMD = /usr/lib/x86_64-linux-gnu/modulecmd.tcl
+# default
+MAKE_COMMAND := make
+# environment
+XRDP_PULSE_SINK_SOCKET = xrdp_chansrv_audio_out_socket_37
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/nd821/nd821_Test/CourseWork_Actual
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/local/share/:/usr/share/:/usr/share/gdm/:/var/lib/menu-xdg/
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/nd821/.config/Code/CachedData/31c37ee8f63491495ac49e43b8544550fbae4533
+# environment
+LANG = C
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/nd821/nd821_Test/CourseWork_Actual
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+_LXSESSION_PID = 1303802
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_CONFIG_DIRS = /etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 3914958
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 5)
+CONDOC = Doxyfile
+# environment
+SAL_USE_VCLPLUGIN = gtk
+# environment
+XDG_DATA_HOME = /home/nd821/.local/share
+# automatic
+*F = $(notdir $*)
+# environment
+MODULEPATH = /etc/environment-modules/modules:/usr/share/modules/versions:/usr/share/modules/$MODULE_VERSION/modulefiles:/usr/share/modules/modulefiles:/apps/modules
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1559640/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+__MODULES_LMINIT = module use --append /etc/environment-modules/modules:module use --append /usr/share/modules/versions:module use --append /usr/share/modules/$MODULE_VERSION/modulefiles:module use --append /usr/share/modules/modulefiles:module use --append /apps/modules
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","osLocale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 4)
+OBJS = LidDrivenCavity.o SolverCG.o LidDrivenCavitySolver.o
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+UID = 1559640
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 3)
+HDRS = LidDrivenCavity.h SolverCG.h mpi.h omp.h 
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+# default
+MAKEFILES := 
+# environment
+MODULESHOME = /usr/share/modules
+# environment
+LANGUAGE = en_GB:en
+# environment
+XRDP_PULSE_SOURCE_SOCKET = xrdp_chansrv_audio_in_socket_37
+# automatic
+^F = $(notdir $^)
+# makefile (from 'Makefile', line 6)
+LDLIBS = -lblas -lboost_program_options -lboost_timer -fopenmp
+# environment
+XDG_CONFIG_HOME = /home/nd821/.config
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = LXDE
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = LXDE
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = LXDE
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = nd821
+# environment
+PULSE_SCRIPT = /etc/xrdp/pulse/default.pa
+# makefile
+.DEFAULT_GOAL := unittest
+# environment
+DISPLAY = :37.0
+# environment
+USER = nd821
+# default
+MAKE_VERSION := 4.3
+# environment
+_ = /usr/share/code/code
+# environment
+XDG_RUNTIME_DIR = /run/user/1559640
+# environment
+XRDP_SOCKET_PATH = /run/xrdp/sockdir
+# environment
+GPG_AGENT_INFO = /run/user/1559640/gnupg/S.gpg-agent:0:1
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/nd821
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1559640/vscode-ae8839bb-1.86-main.sock
+# environment
+XDG_SESSION_ID = c39
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# environment
+XRDP_SESSION = 1
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 2)
+CXXFLAGS = -std=c++20 -Wall -O3
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 1)
+CXX = mpicxx -fopenmp
+# environment
+XDG_MENU_PREFIX = lxde-
+# variable set hash-table stats:
+# Load=92/1024=9%, Rehash=0, Collisions=3/130=2%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 42, inode 30323070): 61 files, 1 impossibilities.
+
+# 61 files, 1 impossibilities in 1 directories.
+
+# Implicit Rules
+
+%.o: %.cpp LidDrivenCavity.h SolverCG.h mpi.h omp.h
+#  recipe to execute (from 'Makefile', line 10):
+	$(CXX) $(CXXFLAGS) -o $@ -c $<
+
+# 1 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+LidDrivenCavitySolver.o:
+#  Implicit rule search has been done.
+#  Last modified 2024-03-22 21:37:19.819187139
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2024-03-22 21:03:30.234610042
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+SolverCG.o:
+#  Implicit rule search has been done.
+#  Last modified 2024-03-22 22:16:18.346949135
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+UnitTest.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 28):
+	@echo "Clearing..."
+	rm -f *.o solver unittest doc
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+solver: LidDrivenCavity.o SolverCG.o LidDrivenCavitySolver.o
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  Last modified 2024-03-22 21:37:19.939188359
+#  File has been updated.
+ 
+#  Needs to be updated (-q is set).
+# automatic
+# @ := solver
+# automatic
+# * := 
+# automatic
+# < := LidDrivenCavity.o
+# automatic
+# + := LidDrivenCavity.o SolverCG.o LidDrivenCavitySolver.o
+# automatic
+# % := 
+# automatic
+# ^ := LidDrivenCavity.o SolverCG.o LidDrivenCavitySolver.o
+# automatic
+# ? := LidDrivenCavity.o SolverCG.o
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/15=7%
+#  recipe to execute (from 'Makefile', line 16):
+	$(CXX) -o $@ $^ $(LDLIBS)
+
+all: solver
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+
+doc: Doxyfile
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 19):
+	@doxygen
+
+unittest: LidDrivenCavity.o SolverCG.o UnitTest.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 13):
+	$(CXX) -o $@ $^ $(LDLIBS)
+
+# Not a target:
+Doxyfile:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+LidDrivenCavity.o:
+#  Implicit rule search has been done.
+#  Last modified 2024-03-22 22:16:16.294928286
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=14/1024=1%, Rehash=0, Collisions=0/50=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 73 / storage = 857 B / avg = 11 B
+# current buf: size = 8162 B / used = 857 B / count = 73 / avg = 11 B
+
+# strcache performance: lookups = 115 / hit rate = 36%
+# hash-table stats:
+# Load=73/8192=1%, Rehash=0, Collisions=0/115=0%
+# Finished Make data base on Fri Mar 22 22:23:41 2024
+
+ 

@@ -1,7 +1,7 @@
-#pragma once
-
 #include <string>
+#include <mpi.h>
 using namespace std;
+
 
 class SolverCG;
 
@@ -10,7 +10,8 @@ class LidDrivenCavity
 public:
     LidDrivenCavity();
     ~LidDrivenCavity();
-
+    void RecieveDataForMPI(MPI_Comm mycart_grid,int size ,int myrank, int mycoords[2], int l_rank, int r_rank, 
+    int u_rank, int d_rank, int b_x, int b_y, int e_x, int e_y );
     void SetDomainSize(double xlen, double ylen);
     void SetGridSize(int nx, int ny);
     void SetTimeStep(double deltat);
@@ -23,9 +24,19 @@ public:
     void PrintConfiguration();
 
 private:
+    int Myrank,AllSize, L_rank, R_rank, D_rank, U_rank, B_x, B_y, E_x, E_y;
+    MPI_Comm Mycart_grid;
+    int* Mycoords = nullptr;
     double* v   = nullptr;
+    double* u0_gather = nullptr;
+    double* u1_gather = nullptr;
+    double* v_gather = nullptr;
+    double* s_gather = nullptr;
+    double* vsum   = nullptr;
     double* s   = nullptr;
     double* tmp = nullptr;
+    double* vnew = nullptr;
+    int Ex, Ey, beginx, beginy, endx, endy;
 
     double dt   = 0.01;
     double T    = 1.0;

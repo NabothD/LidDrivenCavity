@@ -1,0 +1,82 @@
+\hypertarget{classLidDrivenCavity}{}\doxysection{Lid\+Driven\+Cavity Class Reference}
+\label{classLidDrivenCavity}\index{LidDrivenCavity@{LidDrivenCavity}}
+
+
+This class is responsible for calculating and updating vorticity for a given stream function that is performed by the Solver CG class.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLidDrivenCavity_a90dde55c07648c5c1c73185e287c5fbc}\label{classLidDrivenCavity_a90dde55c07648c5c1c73185e287c5fbc}} 
+void {\bfseries Recieve\+Data\+For\+MPI} (MPI\+\_\+\+Comm mycart\+\_\+grid, int size, int myrank, int mycoords\mbox{[}2\mbox{]}, int l\+\_\+rank, int r\+\_\+rank, int u\+\_\+rank, int d\+\_\+rank, int b\+\_\+x, int b\+\_\+y, int e\+\_\+x, int e\+\_\+y)
+\item 
+\mbox{\Hypertarget{classLidDrivenCavity_ac96a0dd4fe0d31f9daba2e126ff72885}\label{classLidDrivenCavity_ac96a0dd4fe0d31f9daba2e126ff72885}} 
+void {\bfseries Set\+Domain\+Size} (double xlen, double ylen)
+\item 
+\mbox{\Hypertarget{classLidDrivenCavity_aa6f9fbebb9bf7cb481ff5f066e14f596}\label{classLidDrivenCavity_aa6f9fbebb9bf7cb481ff5f066e14f596}} 
+void {\bfseries Set\+Grid\+Size} (int nx, int ny)
+\item 
+\mbox{\Hypertarget{classLidDrivenCavity_a996ab414b064d520581b0d4ed08aa17d}\label{classLidDrivenCavity_a996ab414b064d520581b0d4ed08aa17d}} 
+void {\bfseries Set\+Time\+Step} (double deltat)
+\item 
+\mbox{\Hypertarget{classLidDrivenCavity_af9307f56a6f334e6740164c90775f461}\label{classLidDrivenCavity_af9307f56a6f334e6740164c90775f461}} 
+void {\bfseries Set\+Final\+Time} (double finalt)
+\item 
+\mbox{\Hypertarget{classLidDrivenCavity_aeb6eca7e0c1255ebc4c1a8da56dd95b8}\label{classLidDrivenCavity_aeb6eca7e0c1255ebc4c1a8da56dd95b8}} 
+void {\bfseries Set\+Reynolds\+Number} (double Re)
+\item 
+\mbox{\Hypertarget{classLidDrivenCavity_ab0eb448219134e835173e94874a3983a}\label{classLidDrivenCavity_ab0eb448219134e835173e94874a3983a}} 
+void {\bfseries Initialise} ()
+\item 
+void \mbox{\hyperlink{classLidDrivenCavity_a80cd7032d10f09279d62d03335023e72}{Integrate}} ()
+\begin{DoxyCompactList}\small\item\em The Integrate function allows iteration of time i.\+e. advancing to the next time step Each time, the advance function is called which preforms all the equations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLidDrivenCavity_a25e4a6ffd522ffbffaf7e0d2fedad59c}{Write\+Solution}} (std\+::string file)
+\item 
+\mbox{\Hypertarget{classLidDrivenCavity_a8e111839958ac5d4d0d8d583a4d84e86}\label{classLidDrivenCavity_a8e111839958ac5d4d0d8d583a4d84e86}} 
+void {\bfseries Print\+Configuration} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is responsible for calculating and updating vorticity for a given stream function that is performed by the Solver CG class. 
+
+\begin{DoxyNote}{Note}
+This class takes in all the information about ranks including their coordinates and rank numbers to discretise the working domain on the cartesian grid accordingly 
+\end{DoxyNote}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLidDrivenCavity_a80cd7032d10f09279d62d03335023e72}\label{classLidDrivenCavity_a80cd7032d10f09279d62d03335023e72}} 
+\index{LidDrivenCavity@{LidDrivenCavity}!Integrate@{Integrate}}
+\index{Integrate@{Integrate}!LidDrivenCavity@{LidDrivenCavity}}
+\doxysubsubsection{\texorpdfstring{Integrate()}{Integrate()}}
+{\footnotesize\ttfamily void Lid\+Driven\+Cavity\+::\+Integrate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The Integrate function allows iteration of time i.\+e. advancing to the next time step Each time, the advance function is called which preforms all the equations. 
+
+This part of the integrate function allows the code to be written back onto a the Global matrix so it can be written into the file in the correct format\mbox{\Hypertarget{classLidDrivenCavity_a25e4a6ffd522ffbffaf7e0d2fedad59c}\label{classLidDrivenCavity_a25e4a6ffd522ffbffaf7e0d2fedad59c}} 
+\index{LidDrivenCavity@{LidDrivenCavity}!WriteSolution@{WriteSolution}}
+\index{WriteSolution@{WriteSolution}!LidDrivenCavity@{LidDrivenCavity}}
+\doxysubsubsection{\texorpdfstring{WriteSolution()}{WriteSolution()}}
+{\footnotesize\ttfamily void Lid\+Driven\+Cavity\+::\+Write\+Solution (\begin{DoxyParamCaption}\item[{std\+::string}]{file }\end{DoxyParamCaption})}
+
+\begin{DoxyNote}{Note}
+Write\+Solution is only preformed on rank zeros and is used to out put into the file 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Lid\+Driven\+Cavity.\+h\item 
+Back\+\_\+up.\+cpp\item 
+Back\+UP.\+cpp\item 
+Discritised.\+cpp\item 
+Lid\+\_\+\+Copy.\+cpp\item 
+Lid\+Driven\+Cavity.\+cpp\item 
+New\+\_\+\+Solvffk.\+cpp\item 
+New\+\_\+\+Try.\+cpp\item 
+Works\+\_\+everything\+\_\+small.\+cpp\item 
+Works\+On\+Four.\+cpp\end{DoxyCompactItemize}

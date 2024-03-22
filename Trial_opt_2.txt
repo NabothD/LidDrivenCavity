@@ -1,0 +1,170 @@
+Functions sorted by metric: Exclusive Total CPU Time
+
+Exclusive        Inclusive        
+Total CPU Time   Total CPU Time   Name
+sec.             sec.             
+45.922           45.922           <Total>
+12.349           12.349           ATL_ddot_xp1yp1aXbX
+ 9.567            9.567           SolverCG::Precondition(double*, double*)
+ 8.186            8.186           ATL_daxpy_xp0yp0aXbX
+ 7.435            7.455           SolverCG::ApplyOperator(double*, double*)
+ 6.024            6.024           <static>@0x4eb98 (<libatlas.so.3.10.3>)
+ 1.281            1.281           ATL_dnrm2_xp1yp0aXbX
+ 0.170            0.180           write
+ 0.140            0.140           LidDrivenCavity::Advance()._omp_fn.1
+ 0.110            0.110           LidDrivenCavity::Advance()._omp_fn.0
+ 0.080            0.080           pthread_sigmask
+ 0.080            0.080           read
+ 0.070            0.080           MPI_Allreduce
+ 0.040            0.050           <static>@0x527b9 (<libc.so.6>)
+ 0.030           44.991           SolverCG::Solve(double*, double*)
+ 0.030            0.030           <static>@0x154dfc (<libc.so.6>) --  no functions found
+ 0.020            0.020           close
+ 0.020            0.020           openat
+ 0.020            0.020           <static>@0x18231 (<ld-linux-x86-64.so.2>)
+ 0.020            0.150           <static>@0x2d009 (<libcollector.so>)
+ 0.020            0.020           <static>@0x6ca91 (<libm.so.6>)
+ 0.020            0.020           <static>@0x7458a (<libc.so.6>)
+ 0.020            0.020           <static>@0x835c1 (<libc.so.6>)
+ 0.020            0.040           <static>@0x89eb (<ld-linux-x86-64.so.2>)
+ 0.010            0.010           ATL_dnrm2
+ 0.010            0.010           clock_nanosleep
+ 0.010            0.010           __close_nocancel
+ 0.010            0.010           __collector_strcmp
+ 0.010            0.010           __ctype_b_loc
+ 0.010            0.010           faccessat
+ 0.010            0.010           __libc_scratch_buffer_set_array_size
+ 0.010            0.010           mca_base_component_close
+ 0.010            0.010           munmap
+ 0.010            0.010           pthread_create
+ 0.010            0.010           <static>@0x49a5a (<libopen-pal.so.40.30.2>)
+ 0.010            0.010           <static>@0x4c624 (<libc.so.6>)
+ 0.010            0.090           <static>@0x595e7 (<libc.so.6>)
+ 0.010            0.010           <static>@0x85794 (<libc.so.6>)
+ 0.010            0.010           <static>@0x95fa3 (<libc.so.6>)
+ 0.010            0.010           std::basic_filebuf<char, std::char_traits<char> >::xsputn(const char*, long)
+ 0.010            0.010           uselocale
+ 0.               0.010           __asprintf_chk
+ 0.               0.080           __collector_reallocVSize
+ 0.               0.020           __cxxabiv1::__vmi_class_type_info::__do_dyncast(long, __cxxabiv1::__class_type_info::__sub_kind, const __cxxabiv1::__class_type_info*, const void*, const __cxxabiv1::__class_type_info*, const void*, __cxxabiv1::__class_type_info::__dyncast_result&)const
+ 0.               0.040           _dl_catch_error
+ 0.               0.040           _dl_catch_exception
+ 0.               0.150           dlclose
+ 0.               0.040           dlopen
+ 0.               0.020           __dynamic_cast
+ 0.               0.010           ext3x_server_finalize
+ 0.               0.040           ext3x_server_init
+ 0.               0.010           fclose
+ 0.               0.030           free
+ 0.               0.250           GOMP_parallel
+ 0.               0.010           hwloc_topology_destroy
+ 0.               0.090           hwloc_topology_load
+ 0.               0.010           _IO_do_write
+ 0.               0.010           _IO_file_close_it
+ 0.               0.010           _IO_file_overflow
+ 0.               0.010           _IO_file_write
+ 0.              45.242           LidDrivenCavity::Advance()
+ 0.              45.242           LidDrivenCavity::Integrate()
+ 0.               0.320           LidDrivenCavity::WriteSolution(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+ 0.              45.712           main
+ 0.               0.010           malloc
+ 0.               0.010           mca_base_close
+ 0.               0.020           mca_base_component_find
+ 0.               0.010           mca_base_component_repository_finalize
+ 0.               0.020           mca_base_component_repository_open
+ 0.               0.120           mca_base_component_repository_release
+ 0.               0.110           mca_base_components_close
+ 0.               0.080           mca_base_framework_close
+ 0.               0.010           mca_base_framework_components_open
+ 0.               0.020           mca_base_framework_components_register
+ 0.               0.040           mca_base_framework_open
+ 0.               0.030           mca_base_framework_register
+ 0.               0.030           mca_base_select
+ 0.               0.010           mca_coll_self_allreduce_intra
+ 0.               0.010           mca_pml_base_select
+ 0.               0.090           MPI_Init
+ 0.               0.010           munmap
+ 0.               0.010           nanosleep
+ 0.               0.060           ompi_mpi_finalize
+ 0.               0.090           ompi_mpi_init
+ 0.               0.010           ompi_osc_base_find_available
+ 0.               0.010           opal_finalize
+ 0.               0.010           opal_finalize_util
+ 0.               0.080           opal_hwloc_base_get_topology
+ 0.               0.150           orte_daemon
+ 0.               0.040           orte_ess_base_proc_binding
+ 0.               0.050           orte_finalize
+ 0.               0.160           orte_init
+ 0.               0.010           orte_plm_base_select
+ 0.               0.010           orte_ras_base_select
+ 0.               0.010           orte_state_base_select
+ 0.               0.030           pci_get_strings
+ 0.               0.010           pmix_common_dstor_delete_sm_desc
+ 0.               0.010           pmix_common_dstor_finalize
+ 0.               0.030           pmix_hwloc_setup_topology
+ 0.               0.010           pmix_mca_base_component_repository_finalize
+ 0.               0.010           pmix_mca_base_framework_close
+ 0.               0.010           pmix_progress_thread_start
+ 0.               0.010           pmix_rte_finalize
+ 0.               0.010           pmix_rte_init
+ 0.               0.010           pmix_server_finalize
+ 0.               0.010           PMIx_server_finalize
+ 0.               0.040           pmix_server_init
+ 0.               0.040           PMIx_server_init
+ 0.               0.010           pmix_thread_start
+ 0.               0.020           pow
+ 0.               0.010           putc
+ 0.               0.080           sigprocmask
+ 0.               0.010           <static>@0x10659 (<libxcb.so.1.1.0>)
+ 0.               0.010           <static>@0x1126a5 (<libpmix.so.2.6.2>)
+ 0.               0.010           <static>@0x13c6a3 (<libpmix.so.2.6.2>)
+ 0.               0.010           <static>@0x1557b6 (<libpmix.so.2.6.2>)
+ 0.               0.010           <static>@0x160f81 (<libpmix.so.2.6.2>) --  no functions found
+ 0.               0.030           <static>@0x18e82 (<libhwloc.so.15.6.1>)
+ 0.               0.010           <static>@0x1a175 (<libhwloc.so.15.6.1>)
+ 0.               0.060           <static>@0x1fc9 (<mca_ess_singleton.so>) --  no functions found
+ 0.               0.010           <static>@0x2081 (<ld-linux-x86-64.so.2>)
+ 0.              45.862           <static>@0x271c1 (<libc.so.6>)
+ 0.               0.140           <static>@0x29c9 (<mca_ess_hnp.so>) --  no functions found
+ 0.               0.080           <static>@0x30948 (<libhwloc.so.15.6.1>)
+ 0.               0.020           <static>@0x38d7 (<ld-linux-x86-64.so.2>)
+ 0.               0.030           <static>@0x3bb3 (<libpciaccess.so.0.11.1>)
+ 0.               0.010           <static>@0x52e01 (<libopen-pal.so.40.30.2>)
+ 0.               0.010           <static>@0x5bb3 (<mca_pml_cm.so>)
+ 0.               0.150           <static>@0x67e65 (<libopen-pal.so.40.30.2>) --  no functions found
+ 0.               0.010           <static>@0x67e65 (<libopen-pal.so.40.30.2>) --  no functions found
+ 0.               0.010           <static>@0x67e65 (<libopen-pal.so.40.30.2>) --  no functions found
+ 0.               0.010           <static>@0x67e65 (<libopen-pal.so.40.30.2>) --  no functions found
+ 0.               0.090           <static>@0x6cb0 (<libhwloc.so.15.6.1>)
+ 0.               0.010           <static>@0x701 (<hwloc_gl.so>) --  no functions found
+ 0.               0.010           <static>@0x7e2de (<libc.so.6>)
+ 0.               0.100           <static>@0x7e63a (<libc.so.6>)
+ 0.               0.010           <static>@0x802b8 (<libc.so.6>)
+ 0.               0.040           <static>@0x84e91 (<libc.so.6>)
+ 0.               0.040           <static>@0x853dd (<libc.so.6>)
+ 0.               0.010           <static>@0xa985a (<libpmix.so.2.6.2>)
+ 0.               0.040           <static>@0xb383 (<ld-linux-x86-64.so.2>)
+ 0.               0.020           <static>@0xc36a (<libhwloc.so.15.6.1>)
+ 0.               0.010           <static>@0xc6379 (<libmpi.so.40.30.4>) --  no functions found
+ 0.               0.010           <static>@0xd2752 (<libpmix.so.2.6.2>)
+ 0.               0.020           <static>@0xd7c1 (<ld-linux-x86-64.so.2>)
+ 0.               0.010           <static>@0xef11e (<libpmix.so.2.6.2>)
+ 0.               0.110           <static>@0xf21bc (<libstdc++.so.6.0.30>)
+ 0.               0.030           <static>@0xf51 (<hwloc_pci.so>) --  no functions found
+ 0.               0.010           std::basic_filebuf<char, std::char_traits<char> >::close()
+ 0.               0.170           std::basic_filebuf<char, std::char_traits<char> >::_M_convert_to_external(char*, long)
+ 0.               0.170           std::basic_filebuf<char, std::char_traits<char> >::overflow(int)
+ 0.               0.170           std::basic_filebuf<char, std::char_traits<char> >::sync()
+ 0.               0.010           std::__basic_file<char>::close()
+ 0.               0.170           std::__basic_file<char>::xsputn(const char*, long)
+ 0.               0.170           std::basic_ostream<char, std::char_traits<char> >::flush()
+ 0.               0.140           std::basic_ostream<char, std::char_traits<char> >::_M_insert<double>(double)
+ 0.               0.010           std::basic_ostream<char, std::char_traits<char> >::put(char)
+ 0.               0.140           std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_float<double>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, char, double)const
+ 0.               0.020           std::use_facet<std::ctype<char> >(const std::locale&)
+ 0.               0.010           strdup
+ 0.               0.010           usleep
+ 0.               0.010           xcb_connect_to_display_with_auth_info
+ 0.               0.010           _XConnectXCB
+ 0.               0.010           XOpenDisplay
+

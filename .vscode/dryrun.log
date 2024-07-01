@@ -1,6 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory '/home/nd821/nd821_Test/CourseWork_Actual'
-mpicxx -fopenmp -std=c++20 -Wall -O3   -c -o SolverCG.o SolverCG.cpp
-mpicxx -fopenmp -o unittest LidDrivenCavity.o SolverCG.o UnitTest.o -lblas -lboost_program_options -lboost_timer -fopenmp
-make: Leaving directory '/home/nd821/nd821_Test/CourseWork_Actual'
- 
